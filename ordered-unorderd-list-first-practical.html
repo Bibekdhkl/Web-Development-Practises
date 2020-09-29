@@ -1,4 +1,4 @@
-<!--Trying to mimic following text :
+<!--Trying to mimic following text format:
 III BBA
     m Sem1
         1 Maths-I
@@ -18,44 +18,52 @@ IV BCIS
 
 
 -->
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML FIRST PRACTICAL</title>
-    </head>
 
-    <body>
-        <ol type="I" start="3">
-            <li>BBA</li>
-                 <ol type="a" start="13">
-                    <li>Sem1</li>
-                        <ol type="1">
-                            <li>Maths-I</li>
-                            <li>Programming in C</li>
-                            <li>Fundamentals of IT</li>
-                        </ol>
-                    <li>Sem2</li>
-                        <ul type="disc">
-                            <li>OOP</li>
-                            <li>Software Engineering</li>
-                        </ul>
-                </ol>
-            <li>BCIS </li>
-                <ol type="i">
-                    <li>Sem1</li>
-                        <ol type="1" start="100">
-                            <li>Maths-I</li>
-                            <li>Programming in C</li>
-                            <li>Fundamentals of IT</li>
-                        </ol>
-                    <li>Sem2</li>
-                        <ul type="disc">
-                            <li>DBMS</li>
-                            <li>Software Engineering</li>
-                        </ul>
-                </ol>
+<head>
+    <title>HTML FIRST PRACTICAL</title>
+</head>
 
+<body>
+    <ol type="I" start="3">
+        <li>BBA</li>
+        <ol type="a" start="13">
+            <li>Sem1</li>
+            <ol type="1">
+                <li>Maths-I</li>
+                <li>Programming in C</li>
+                <li>Fundamentals of IT</li>
+            </ol>
+            <li>Sem2</li>
+            <ul type="disc">
+                <li>OOP</li>
+                <li>Software Engineering</li>
+            </ul>
         </ol>
-    </body>
+        <li>BCIS </li>
+        <ol type="i">
+            <li>Sem1</li>
+            <ol type="1" start="100">
+                <li>Maths-I</li>
+                <li>Programming in C</li>
+                <li>Fundamentals of IT</li>
+            </ol>
+            <li>Sem2</li>
+            <ul type="disc">
+                <li>DBMS</li>
+                <li>Software Engineering</li>
+            </ul>
+        </ol>
+
+    </ol>
+</body>
+
 </html>
+<!--            NOTES
+    Date:2020/09/29
+     Today i learnt about using start attributes in ordered and unordered list.
+     While using start we have to use only numeric value:
+        Let us suppose you have set type="I" but if you want to start your list from IIIthen,
+         you have to write start="3" but not start="III".
+-->
