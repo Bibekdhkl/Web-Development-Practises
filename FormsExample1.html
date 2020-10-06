@@ -1,0 +1,55 @@
+<!--Many tags and attributes used here arenot supported in HTML5-->
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <!--action means what happens after submit button is pressed
+        Also, name and value of type checkbox and radio plays very important roles in backend-->
+    <form action="#" method="POST">
+        <ul>
+            <li>FIRST NAME <input type="text"></li><br>
+            <li>PASSWORD <input type="password"></li><br>
+            <li>GENDER</li>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+
+            <li>ADDRESS <textarea rows="5" cols="20"></textarea></li><br>
+            <li>D.O.B <select>
+                    <option>Jan</option>
+                    <option>feb</option>
+                    <option>Mar</option>
+                </select>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <select>
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                </select>
+
+            </li><br>
+            <li>SELECT GAMES
+                <input type="checkbox" name="game" value="Hockey">Hockey
+                <input type="checkbox" name="game" value="Football">Football
+                <input type="checkbox" name="game" value="Cricket">Cricket
+                <input type="checkbox" name="game" value="VolleyBall">VolleyBall
+            </li><br>
+            <li>MARITAL STATUS
+                <input type="radio" name="status" value="Married">Married
+                <input type="radio" name="status" value="Unmarried">Unmarried
+            </li><br>
+        </ul>
+        <input type="submit">
+        <input type="reset"><br>
+        <input type="checkbox" value="I accept this agreement">I accept this agreement
+    </form>
+
+</body>
+
+</html>
